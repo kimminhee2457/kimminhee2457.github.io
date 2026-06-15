@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습자료실</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .board-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .board-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000;
+            padding-bottom: 10px;
+        }
+        .board-list {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+        .board-list th, .board-list td {
+            border-bottom: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .board-list th {
+            background-color: skyblue;
+            font-weight: bold;
+        }
+        .file-icon {
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #555;
+            text-decoration: none;
+        }
+        .file-icon:hover {
+            background-color: skyblue;
+            color: black;
+        }
+        .page {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+        }
+        .page a {
+            display: inline;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            color: #000;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .page a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <a href="index.html" class="top-logo">동미고등학교</a>
+        <button class="top-toggle" aria-label="메뉴 열기">
+            ☰
+        </button>
+        <nav class="top-menu">
+            <a href="./introduce.html">학교소개</a>
+            <a href="./tidings.html">학교소식</a>
+            <a href="./entrance.html">입학안내</a>
+            <a href="./life.html">학생생활</a>
+        </nav>
+    </header>
+
+    <main class="board-container">
+        <h2 class="board-title">학습자료실</h2>
+
+        <table class="board-list">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>등록일</th>
+                    <th>첨부</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>2026학년도 1학기 1차 지필평가 학년별 시험범위 안내</td>
+                    <td>교육과정부</td>
+                    <td>2026-04-10</td>
+                    <td><a href="./hak.html" class="file-icon">PDF</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>1학년 수학 I - 디딤돌 학습지 (함수 단원)</td>
+                    <td>수학과</td>
+                    <td>2026-04-08</td>
+                    <td><a href="./hak.html" class="file-icon">HWP</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2학년 전국연합학력평가 기출문제 및 해설지</td>
+                    <td>진학지도부</td>
+                    <td>2026-03-25</td>
+                    <td><a href="./hak.html" class="file-icon">ZIP</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3학년 영어 독해와 작문 -  3강 어휘 정리 리스트</td>
+                    <td>영어과</td>
+                    <td>2026-03-18</td>
+                    <td><a href="./hak.html" class="file-icon">DOCX</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>[공통] 온라인 클래스 학습 자료실 이용 안내 수칙</td>
+                    <td>정보부</td>
+                    <td>2026-03-02</td>
+                    <td><a href="./hak.html" class="file-icon">PDF</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="page">
+            <a>1</a>
+            <a>2</a>
+            <a>3</a>
+            <a>4</a>
+            <a>5</a>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.top-toggle');
+        const topMenu = document.querySelector('.top-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            topMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

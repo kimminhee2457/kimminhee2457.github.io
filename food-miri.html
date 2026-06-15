@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이번주 급식표 미리보기</title>
+    <style>
+        body {
+            padding: 12px;
+        }
+        .meal-table {
+            width: 100%;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+        .meal-table th, .meal-table td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px 6px;
+            vertical-align: top;
+        }
+        .meal-table th {
+            width: 20%;
+            font-weight: bold;
+            color: #555;
+            background-color: #f9f9f9;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .today th {
+            background-color: skyblue;
+            color: black;
+        }
+        .today td {
+            background-color: #f4fbc2;
+        }
+        .menu-text {
+            line-height: 1.4;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="meal-container">
+        <table class="meal-table">
+            <tr class="today">
+                <th>월<br>6/15</th>
+                <td>
+                    <div class="menu-text">
+                        차수수밥<br>
+                        맑은 콩나물국<br>
+                        돈육고추장불고기<br>
+                        감자채볶음<br>
+                        포기김치 / 멜론
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>화<br>6/16</th>
+                <td>
+                    <div class="menu-text">
+                        날치알김치볶음밥<br>
+                        팽이두부된장국<br>
+                        수제새우튀김 & 타르타르S<br>
+                        깍두기<br>
+                        요구르트
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>수<br>6/17</th>
+                <td>
+                    <div class="menu-text">
+                        발아현미밥<br>
+                        부대찌개 & 라면사리<br>
+                        안동찜닭<br>
+                        오이도라지무침<br>
+                        총각김치
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>목<br>6/18</th>
+                <td>
+                    <div class="menu-text">
+                        기장밥<br>
+                        쇠고기미역국<br>
+                        매콤돼지갈비찜<br>
+                        계란말이<br>
+                        포기김치
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>금<br>6/19</th>
+                <td>
+                    <div class="menu-text">
+                        짜장면<br>
+                        계란파국<br>
+                        꿔바로우탕수육<br>
+                        단무지무침<br>
+                        요플레
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

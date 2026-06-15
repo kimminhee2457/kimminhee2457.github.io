@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생생활</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .notice-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .notice {
+            font-size: 0.85rem;
+        }
+        .notice h3 {
+            color: skyblue;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .notice p {
+            margin: 0;
+            color: #000;
+        }
+        .timeline {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            max-height: 430px;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+        .timeline-month {
+            font-weight: bold;
+            color: #000;
+            font-size: 0.95rem;
+            margin-top: 14px;
+            margin-bottom: 6px;
+            padding-bottom: 4px;
+        }
+        .timeline-item {
+            margin-bottom: 8px;
+            display: flex;
+        }
+        .timeline-date {
+            font-weight: bold;
+            color: skyblue;
+            width: 55px;
+        }
+        .timeline-content {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <a href="index.html" class="top-logo">동미고등학교</a>
+        <button class="top-toggle" aria-label="메뉴 열기">
+            ☰
+        </button>
+        <nav class="top-menu">
+            <a href="./introduce.html">학교소개</a>
+            <a href="./tidings.html">학교소식</a>
+            <a href="./entrance.html">입학안내</a>
+            <a href="./life.html">학생생활</a>
+        </nav>
+    </header>
+
+    <main class="card-list">
+        <div class="card">
+            <a>알림장</a>
+            <div class="notice-box">
+                <div class="notice">
+                    <h3>[1학년 알림]</h3>
+                    <p>이번 주 금요일(6/19)까지 창의적 체험활동 보고서 양식을 작성하여 각 반 반장에게 제출해 주세요.</p>
+                </div>
+                <div class="notice">
+                    <h3>[2학년 알림]</h3>
+                    <p>다음 주 수요일 문학 수행평가(자유시 창작)가 예정되어 있으니 필기구와 필독서를 지참하기 바랍니다.</p>
+                </div>
+                <div class="notice">
+                    <h3>[3학년 알림]</h3>
+                    <p>6월 수능 모의평가 성적 통지표가 배부되었습니다. 대입 정시/수시 상담 일정을 담임 선생님과 확정하세요.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <a> 2026학년도 연간 학사 일정</a>
+            <div class="timeline">
+                
+                <div class="timeline-month">1학기 (상반기)</div>
+                <div class="timeline-item">
+                    <span class="timeline-date">03/02</span>
+                    <span class="timeline-content">2026학년도 입학식 및 제1학기 개학식</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">03/19</span>
+                    <span class="timeline-content">전국연합학력평가 (1, 2, 3학년)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">04/08</span>
+                    <span class="timeline-content">학부모 총회 및 공개 수업의 날</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">04/28</span>
+                    <span class="timeline-content">1학기 중간고사 지필평가 (~05/01)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">05/15</span>
+                    <span class="timeline-content">스승의 날 행사 및 교내 체육대회</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">05/22</span>
+                    <span class="timeline-content">1, 2학년 테마형 현장체험학습 / 3학년 수련활동</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">06/04</span>
+                    <span class="timeline-content">한국교육과정평가원 수능 모의평가 (3학년)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">06/15</span>
+                    <span class="timeline-content">1학기 기말고사 지필평가 주간 (~06/19)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">07/10</span>
+                    <span class="timeline-content">교내 동아리 발표회 및 학술제</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">07/17</span>
+                    <span class="timeline-content">여름방학식 (방학기간: 07/18 ~ 08/16)</span>
+                </div>
+
+                <div class="timeline-month">2학기 (하반기)</div>
+                <div class="timeline-item">
+                    <span class="timeline-date">08/17</span>
+                    <span class="timeline-content">제2학기 개학식 및 학급 임원 선거</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">09/03</span>
+                    <span class="timeline-content">전국연합학력평가 및 수능 모의평가</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">10/05</span>
+                    <span class="timeline-content">2학기 중간고사 지필평가 (~10/08)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">10/23</span>
+                    <span class="timeline-content">동미 한마음 축제 (문화예술제)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">11/12</span>
+                    <span class="timeline-content">대학수학능력시험 (수능 당일 재량휴업일)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">12/07</span>
+                    <span class="timeline-content">2학기 기말고사 지필평가 주간 (~12/11)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">12/24</span>
+                    <span class="timeline-content">겨울방학식 (방학기간: 12/25 ~ 01/31)</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">02/02</span>
+                    <span class="timeline-content">학년말 개학식 및 성적 확인</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">02/06</span>
+                    <span class="timeline-content">제XX회 졸업식 및 종업식</span>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.top-toggle');
+        const topMenu = document.querySelector('.top-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            topMenu.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>

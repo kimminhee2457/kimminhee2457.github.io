@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동미고등학교</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="top">
+        <a href="index.html" class="top-logo">동미고등학교</a>
+        <button class="top-toggle" aria-label="메뉴 열기">
+            ☰
+        </button>
+        <nav class="top-menu">
+            <a href="./introduce.html">학교소개</a>
+            <a href="./tidings.html">학교소식</a>
+            <a href="./entrance.html">입학안내</a>
+            <a href="./life.html">학생생활</a>
+        </nav>
+    </header>
+
+    <div class="card-list">
+        <article class="card">
+            <div class="card-body">
+                <h3 class="card-title"><a href="./gajung.html">가정통신문</a></h3>
+                <iframe class="card-iframe" src="./gajung-miri.html" alt="가정통신문 화면"></iframe>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-body">
+                <h3 class="card-title"><a href="./hak.html">학습자료실</a></h3>
+                <iframe class="card-iframe" src="./hak-miri.html" alt="학습자료실 화면"></iframe>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-body">
+                <h3 class="card-title"><a href="./food.html">급식표</a></h3>
+                <iframe class="card-iframe" src="./food-miri.html" alt="급식표 화면"></iframe>
+            </div>
+        </article>
+        
+        <article class="card">
+            <div class="card-body">
+                <h3 class="card-title"><a href="./new.html">새소식</a></h3>
+                <iframe class="card-iframe" src="./new-miri.html" alt="새소식 화면"></iframe>
+            </div>
+        </article>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.top-toggle');
+        const topMenu = document.querySelector('.top-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            topMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

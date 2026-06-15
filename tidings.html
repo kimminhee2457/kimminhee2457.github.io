@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교소식</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .tiding-list {
+            list-style: none;
+            padding: 0;
+            margin: 8px 0 0 0;
+            font-size: 0.9rem;
+        }
+        .tiding-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 4px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .tiding-list li span {
+            color: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <a href="index.html" class="top-logo">동미고등학교</a>
+        <button class="top-toggle" aria-label="메뉴 열기">
+            ☰
+        </button>
+        <nav class="top-menu">
+            <a href="./introduce.html">학교소개</a>
+            <a href="./tidings.html">학교소식</a>
+            <a href="./entrance.html">입학안내</a>
+            <a href="./life.html">학생생활</a>
+        </nav>
+    </header>
+
+    <main class="card-list">
+        <div class="card">
+            <a>공지사항</a>
+            <ul class="tiding-list">
+                <li><span>[안내] 방학 중 도서관 이용 시간 변경</span> <span>06-12</span></li>
+                <li><span>[공모] 제1회 교내 백일장 대회 개최</span> <span>06-10</span></li>
+                <li><span>[일정] 1학기 도서 대출 우수자 시상 안내</span> <span>06-05</span></li>
+                <li><span>[공지] 자전거 등교 학생 안전장구 착용 의무화</span> <span>05-29</span></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <a>동미뉴스</a>
+            <ul class="tiding-list">
+                <li><span>[6월호] 뜨거운 여름, 우리들의 성장 이야기</span> <span>06-01</span></li>
+                <li><span>[5월호] 감사의 달, 가족과 함께하는 교육</span> <span>05-02</span></li>
+                <li><span>[4월호] 봄꽃과 함께 피어나는 우리들의 꿈</span> <span>04-01</span></li>
+                <li><span>[3월호] 반갑다 친구야! 설레는 첫 만남</span> <span>03-02</span></li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.top-toggle');
+        const topMenu = document.querySelector('.top-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            topMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

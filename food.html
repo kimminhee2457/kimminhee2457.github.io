@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이번주 급식표</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .meal-table {
+            width: 100%;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+        .meal-table th, .meal-table td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px 6px;
+        }
+        .meal-table th {
+            width: 20%;
+            font-weight: bold;
+            color: #000;
+            background-color: #f9f9f9;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .today th {
+            background-color: skyblue;
+            color: black;
+        }
+        .today td {
+            background-color: #f4fbc2;
+        }
+        .menu-text {
+            color: #000;
+        }
+        .meal-footer {
+            margin-top: 10px;
+            font-size: 0.7rem;
+            color: #999;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <a href="index.html" class="top-logo">동미고등학교</a>
+        <button class="top-toggle" aria-label="메뉴 열기">
+            ☰
+        </button>
+        <nav class="top-menu">
+            <a href="./introduce.html">학교소개</a>
+            <a href="./tidings.html">학교소식</a>
+            <a href="./entrance.html">입학안내</a>
+            <a href="./life.html">학생생활</a>
+        </nav>
+    </header>
+
+    <div class="meal-container">
+        <table class="meal-table">
+            <tr class="today">
+                <th>월<br>6/15</th>
+                <td>
+                    <div class="menu-text">
+                        차수수밥<br>
+                        맑은 콩나물국<br>
+                        돈육고추장불고기<br>
+                        감자채볶음<br>
+                        포기김치 / 멜론
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>화<br>6/16</th>
+                <td>
+                    <div class="menu-text">
+                        날치알김치볶음밥<br>
+                        팽이두부된장국<br>
+                        수제새우튀김 & 타르타르S<br>
+                        깍두기<br>
+                        요구르트
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>수<br>6/17</th>
+                <td>
+                    <div class="menu-text">
+                        발아현미밥<br>
+                        부대찌개 & 라면사리<br>
+                        안동찜닭<br>
+                        오이도라지무침<br>
+                        총각김치
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>목<br>6/18</th>
+                <td>
+                    <div class="menu-text">
+                        기장밥<br>
+                        쇠고기미역국<br>
+                        매콤돼지갈비찜<br>
+                        계란말이<br>
+                        포기김치
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>금<br>6/19</th>
+                <td>
+                    <div class="menu-text">
+                        짜장면<br>
+                        계란파국<br>
+                        꿔바로우탕수육<br>
+                        단무지무침<br>
+                        요플레
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="meal-footer">
+            * 상황에 따라 식단이 변경될 수 있습니다.
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.top-toggle');
+        const topMenu = document.querySelector('.top-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            topMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

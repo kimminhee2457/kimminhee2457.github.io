@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새소식</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .board-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .board-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000;
+            padding-bottom: 10px;
+        }
+        .board-list {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+        .board-list th, .board-list td {
+            border-bottom: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        .board-list th {
+            background-color: skyblue;
+            font-weight: bold;
+        }
+        .page {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        .page a {
+            display: inline;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            color: #000;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .page a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <a href="index.html" class="top-logo">동미고등학교</a>
+        <button class="top-toggle" aria-label="메뉴 열기">
+            ☰
+        </button>
+        <nav class="top-menu">
+            <a href="./introduce.html">학교소개</a>
+            <a href="./tidings.html">학교소식</a>
+            <a href="./entrance.html">입학안내</a>
+            <a href="./life.html">학생생활</a>
+        </nav>
+    </header>
+
+    <main class="board-container">
+        <h2 class="board-title">새소식</h2>
+        
+        <table class="board-list">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td> [동아리] 방송부 신입 부원 최종 합격자 발표</td>
+                    <td>2026-06-12</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td> [체육] 1학기 학년별 반대항 축구대회 대진표 안내</td>
+                    <td>2026-06-09</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td> [이벤트] 미소 빵빵! 수요일 급식 디저트 데이 안내</td>
+                    <td>2026-06-03</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> [수상] 제24회 전국 고교 과학탐구대회 우수작 선정</td>
+                    <td>2026-05-29</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td> [행사] 1, 2학년 현장체험학습 사진 공모전 개최</td>
+                    <td>2026-05-18</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page">
+            <a>1</a>
+            <a>2</a>
+            <a>3</a>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.top-toggle');
+        const topMenu = document.querySelector('.top-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            topMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

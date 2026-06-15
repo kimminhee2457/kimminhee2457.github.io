@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교소개</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .text {
+            color: #000;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+        .symbol-box {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .map-desc {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <a href="index.html" class="top-logo">동미고등학교</a>
+        <button class="top-toggle" aria-label="메뉴 열기">☰</button>
+        <nav class="top-menu">
+            <a href="./introduce.html">학교소개</a>
+            <a href="./tidings.html">학교소식</a>
+            <a href="./entrance.html">입학안내</a>
+            <a href="./life.html">학생생활</a>
+        </nav>
+    </header>
+
+    <main class="card-list">
+        <div class="card">
+            <a href="#">학교장 인사말</a>
+            <div class="text">
+                <p>"꿈을 향해 도전하고 함께 성장하는 행복한 학교"</p>
+                <p>동미고등학교 홈페이지를 방문해 주신 여러분을 진심으로 환영합니다. 본교는 바른 품성과 창의성을 갖춘 미래 인재를 육성하기 위해 모든 교육 가족이 한마음으로 노력하고 있습니다. 학생들이 스스로 잠재력을 발견하고 키워나갈 수 있도록 따뜻한 배움터를 만들어 가겠습니다.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a>학교 상징</a>
+            <div class="symbol-box">
+                <div class="symbol-item">
+                    교목: 소나무<br>
+                    <span class="text">어떠한 역경 속에서도 푸름을 잃지 않는 기상과 절개를 상징합니다.</span>
+                </div>
+                <div class="symbol-item">
+                    교화: 장미<br>
+                    <span class="text">열정적인 배움의 자세와 타인을 향한 사랑, 아름다운 조화를 상징합니다.</span>
+                </div>
+                <div class="symbol-item">
+                    교가 (1절):<br>
+                    <span class="text">동쪽의 푸른 기상 가슴에 품고, 미래를 밝혀나갈 배움의 전당...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <a>찾아오시는 길</a>
+            <p class="map-desc">구일역에서 도보 20분</p>
+            <iframe class="card-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4922015672632!2d126.86767507654709!3d37.49630782205686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9e08411cfca1%3A0x52aebfe3b96804cb!2z6rWs7J28!5e0!3m2!1sko!2skr!4v1781437724295!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.top-toggle');
+        const topMenu = document.querySelector('.top-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            topMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
